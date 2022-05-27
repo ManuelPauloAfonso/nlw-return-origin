@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --primary-color: hsl(170, 100%, 26%);
+    --secondary-color: hsl(210, 11%, 15%);
+    --secondary-color-transparent: hsl(210, 11%, 15%);
+    --brand--beige: hsl(39, 100%, 97%);
+    --brand-ligth:   hsl(148, 23%, 89%);
+    --nav-heith: 7.2rem;
+}
+body{
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+    text-align: center;
+}
+.wrapper{
+    width: 37.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-inline: 2.4rem;
+
+}
+header{
+    margin-top: 11rem;
+
+}
+header h4{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.4rem;
+}
+header h1{
+    font-size: 3.4rem;
+    color: var(--secondary-color);
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+header p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    margin-bottom: 3.4rem;
+}
+header button{
+    background: var(--primary-color);
+    border: none;
+    border-radius: 0.8rem;
+    margin-bottom: 6rem;
+    height: 6.2rem;
+    width: 26.3rem;
+    border-radius: 4rem;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    height: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+header img{
+    display: block;
+    margin-inline: auto;
+    object-position: 0 2rem;
+    width: 26.4rem;
+}
+header::before{
+    content: "";
+    width: 100vw;
+    height: calc(108rem + var(--nav-heith));
+    background-color: var(--brand-ligth);
+    display: block;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.stats{
+    width: 32.7rem;
+    padding-block: 4rem;
+
+
+    margin-inline: auto;
+    background-color: var(--brand--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    border: 1px solid var(--brand-ligth);
+    border-radius: 0.6rem;
+
+}
+.stat h3{
+    font-size: 4.8rem;
+    color: #212529;
+    line-height: 130%;
+    margin-bottom: 0.4rem;
+}
+.stat p {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+
+}
+nav{
+    display: flex;
+    height: var(--nav-heith);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav.scroll{
+    background-color: var(--primary-color);
+    width: 100vw;
+}
+nav.scroll svg:nth-child(1) path {
+    fill: white;
+}
+nav.scroll svg:nth-child(2) path{
+    stroke: white;
+}
